@@ -1,0 +1,27 @@
+[2015-06-17 18:56:37.882] [ERROR] logger - { [Error: ER_NO_SUCH_TABLE: Table 'db_yld.cr_giveGiftRef' doesn't exist]
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  index: 0 }
+Error: ER_NO_SUCH_TABLE: Table 'db_yld.cr_giveGiftRef' doesn't exist
+    at Query.Sequence._packetToError (j:\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\liveclient\model\incomeDao.js:13:20
+    at Ping.onPing [as _callback] (j:\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\liveclient\node_modules\mysql\lib\Connection.js:82:28)

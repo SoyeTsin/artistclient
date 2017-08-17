@@ -1,0 +1,43 @@
+﻿{
+  "title": "这是正式环境",
+  "port": 8080,
+  "db": {
+    "host": "123.206.43.13",
+    "port": "13305",
+    "user": "root",
+    "password": "Alen",
+    "database": "db_yld",
+    "connectionLimit": 50
+  },
+  "db2": {
+    "host": "123.206.43.13",
+    "port": "13308",
+    "user": "readdb",
+    "password": "db123",
+    "database": "db_yld",
+    "connectionLimit": 50
+  },
+  "db3": {
+    "host": "103.231.69.74",
+    "port": "13306",
+    "user": "root",
+    "password": "Alen",
+    "database": "db_for_query",
+    "connectionLimit": 50
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": "6379",
+    "db": 0,
+    "password": ""
+  },
+  "redisCache": {
+    "host": "127.0.0.1",
+    "port": "6379",
+    "db": 1,
+    "password": ""
+  },
+  "rights": "提示信息",
+  "gift_url": "http://125.208.13.178:6062",
+  "notice_url": "http://125.208.13.178:8099"
+}

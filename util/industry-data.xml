@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <industry name="高新科技" value="高新科技">
+        <subIndustry name="互联网" value="互联网"></subIndustry>
+        <subIndustry name="电子商务" value="电子商务"></subIndustry>
+        <subIndustry name="电子游戏" value="电子游戏"></subIndustry>
+        <subIndustry name="计算机软件" value="计算机软件"></subIndustry>
+        <subIndustry name="计算机硬件" value="计算机硬件"></subIndustry>
+    </industry>
+    <industry name="信息传媒" value="信息传媒">
+        <subIndustry name="出版业" value="出版业"></subIndustry>
+        <subIndustry name="电影录音" value="电影录音"></subIndustry>
+        <subIndustry name="广播电视" value="广播电视"></subIndustry>
+        <subIndustry name="通信" value="通信"></subIndustry>
+    </industry>
+    <industry name="服务行业" value="服务行业">
+        <subIndustry name="法律" value="法律"></subIndustry>
+        <subIndustry name="餐饮" value="餐饮"></subIndustry>
+        <subIndustry name="酒店" value="酒店"></subIndustry>
+        <subIndustry name="旅游" value="旅游"></subIndustry>
+        <subIndustry name="广告" value="广告"></subIndustry>
+        <subIndustry name="公关" value="公关"></subIndustry>
+        <subIndustry name="景观" value="景观"></subIndustry>
+        <subIndustry name="咨询分析" value="咨询分析"></subIndustry>
+        <subIndustry name="市场推广" value="市场推广"></subIndustry>
+        <subIndustry name="人力资源" value="人力资源"></subIndustry>
+        <subIndustry name="社工服务" value="社工服务"></subIndustry>
+        <subIndustry name="养老服务" value="养老服务"></subIndustry>
+    </industry>
+    <industry name="信息传媒" value="信息传媒">
+        <subIndustry name="出版业" value="出版业"></subIndustry>
+        <subIndustry name="电影录音" value="电影录音"></subIndustry>
+        <subIndustry name="广播电视" value="广播电视"></subIndustry>
+        <subIndustry name="通信" value="通信"></subIndustry>
+    </industry>
+    <industry name="金融" value="金融">
+        <subIndustry name="银行" value="银行"></subIndustry>
+        <subIndustry name="资本投资" value="资本投资"></subIndustry>
+        <subIndustry name="证券投资" value="证券投资"></subIndustry>
+        <subIndustry name="保险" value="保险"></subIndustry>
+        <subIndustry name="信贷" value="信贷"></subIndustry>
+        <subIndustry name="财务" value="财务"></subIndustry>
+        <subIndustry name="审计" value="审计"></subIndustry>
+    </industry>
+    <industry name="信息传媒" value="信息传媒">
+        <subIndustry name="出版业" value="出版业"></subIndustry>
+        <subIndustry name="电影录音" value="电影录音"></subIndustry>
+        <subIndustry name="广播电视" value="广播电视"></subIndustry>
+        <subIndustry name="通信" value="通信"></subIndustry>
+    </industry>
+    <industry name="教育" value="教育">
+        <subIndustry name="高等教育" value="高等教育"></subIndustry>
+        <subIndustry name="基础教育" value="基础教育"></subIndustry>
+        <subIndustry name="职业教育" value="职业教育"></subIndustry>
+        <subIndustry name="幼儿教育" value="幼儿教育"></subIndustry>
+        <subIndustry name="特殊教育" value="特殊教育"></subIndustry>
+        <subIndustry name="培训" value="培训"></subIndustry>
+    </industry>
+    <industry name="医疗服务" value="医疗服务">
+        <subIndustry name="制药" value="制药"></subIndustry>
+        <subIndustry name="保健" value="保健"></subIndustry>
+        <subIndustry name="美容" value="美容"></subIndustry>
+        <subIndustry name="医疗器材" value="医疗器材"></subIndustry>
+        <subIndustry name="生物工程" value="生物工程"></subIndustry>
+        <subIndustry name="医疗器材" value="医疗器材"></subIndustry>
+        <subIndustry name="疗养服务" value="疗养服务"></subIndustry>
+        <subIndustry name="护理服务" value="护理服务"></subIndustry>
+    </industry>
+    <industry name="艺术娱乐" value="艺术娱乐">
+        <subIndustry name="创意艺术" value="创意艺术"></subIndustry>
+        <subIndustry name="体育健身" value="体育健身"></subIndustry>
+        <subIndustry name="娱乐休闲" value="娱乐休闲"></subIndustry>
+        <subIndustry name="图书馆" value="图书馆"></subIndustry>
+        <subIndustry name="博物馆" value="博物馆"></subIndustry>
+        <subIndustry name="策展" value="策展"></subIndustry>
+        <subIndustry name="博彩" value="博彩"></subIndustry>
+    </industry>
+    <industry name="制造加工" value="制造加工">
+        <subIndustry name="食品饮料业" value="食品饮料业"></subIndustry>
+        <subIndustry name="纺织皮革业" value="纺织皮革业"></subIndustry>
+        <subIndustry name="服装业" value="服装业"></subIndustry>
+        <subIndustry name="烟草业" value="烟草业"></subIndustry>
+        <subIndustry name="造纸业" value="造纸业"></subIndustry>
+        <subIndustry name="印刷业" value="印刷业"></subIndustry>
+        <subIndustry name="化工业" value="化工业"></subIndustry>
+        <subIndustry name="汽车" value="汽车"></subIndustry>
+        <subIndustry name="家具" value="家具"></subIndustry>
+        <subIndustry name="电子电器" value="电子电器"></subIndustry>
+        <subIndustry name="机械设备" value="机械设备"></subIndustry>
+        <subIndustry name="塑料工业" value="塑料工业"></subIndustry>
+        <subIndustry name="金属加工" value="金属加工"></subIndustry>
+        <subIndustry name="军火" value="军火"></subIndustry>
+    </industry>
+    <industry name="地产建筑" value="地产建筑">
+        <subIndustry name="房地产" value="房地产"></subIndustry>
+        <subIndustry name="装饰装潢" value="装饰装潢"></subIndustry>
+        <subIndustry name="特殊建造" value="特殊建造"></subIndustry>
+        <subIndustry name="建筑设备" value="建筑设备"></subIndustry>
+    </industry>
+    <industry name="贸易零售" value="贸易零售">
+        <subIndustry name="零售" value="零售"></subIndustry>
+        <subIndustry name="大宗交易" value="大宗交易"></subIndustry>
+        <subIndustry name="进出口贸易" value="进出口贸易"></subIndustry>
+    </industry>
+    <industry name="公共服务" value="公共服务">
+        <subIndustry name="政府" value="政府"></subIndustry>
+        <subIndustry name="国防军事" value="国防军事"></subIndustry>
+        <subIndustry name="科研" value="科研"></subIndustry>
+        <subIndustry name="给排水" value="给排水"></subIndustry>
+        <subIndustry name="水利能源" value="水利能源"></subIndustry>
+        <subIndustry name="电力电网" value="电力电网"></subIndustry>
+        <subIndustry name="给排水" value="给排水"></subIndustry>
+        <subIndustry name="公共管理" value="公共管理"></subIndustry>
+        <subIndustry name="环境保护" value="环境保护"></subIndustry>
+        <subIndustry name="非盈利组织" value="非盈利组织"></subIndustry>
+    </industry>
+    <industry name="开采冶金" value="开采冶金">
+        <subIndustry name="煤炭工业" value="煤炭工业"></subIndustry>
+        <subIndustry name="石油工业" value="石油工业"></subIndustry>
+        <subIndustry name="黑色金属" value="黑色金属"></subIndustry>
+        <subIndustry name="有色金属" value="有色金属"></subIndustry>
+        <subIndustry name="土砂石开采" value="土砂石开采"></subIndustry>
+        <subIndustry name="地热开采" value="地热开采"></subIndustry>
+    </industry>
+    <industry name="交通仓储" value="交通仓储">
+        <subIndustry name="邮政" value="邮政"></subIndustry>
+        <subIndustry name="物流递送" value="物流递送"></subIndustry>
+        <subIndustry name="地面运输" value="地面运输"></subIndustry>
+        <subIndustry name="铁路运输" value="铁路运输"></subIndustry>
+        <subIndustry name="管线运输" value="管线运输"></subIndustry>
+        <subIndustry name="航运业" value="航运业"></subIndustry>
+        <subIndustry name="民用航空业" value="民用航空业"></subIndustry>
+    </industry>
+    <industry name="农林牧渔" value="农林牧渔">
+        <subIndustry name="种植业" value="种植业"></subIndustry>
+        <subIndustry name="畜牧养殖业" value="畜牧养殖业"></subIndustry>
+        <subIndustry name="林业" value="林业"></subIndustry>
+        <subIndustry name="渔业" value="渔业"></subIndustry>
+    </industry>
+</root>

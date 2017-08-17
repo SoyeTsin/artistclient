@@ -1,0 +1,17 @@
+[
+    {
+        "table":"cr_domaincalcu",
+        "field":"rid",
+        "data":{"scoreRate":1,"initScore":10,"signinScore":1,"signinMaxScore":5,"signinStep":1,"shareCTScore":2,"shareCFScore":2,"shareCFLimit":3,"shareGTScore":2,"shareGFScore":2,"shareGFLimit":3,"shareMFLimit":3,"shareOTScore":2,"shareOFScore":2,"scoreExchange":100,"countExchange":1,"floorLimit":100,"commentScore":0,"rechargeScore":1,"joinScore":2}
+    },
+    {
+        "table":"cr_rank",
+        "field":"domainId",
+        "data":{"rankName":"金卡会员","rankOrder":5,"cardCost":0,"deadDate":"永久有效","prepaid":0,"initScore":10,"scaleMoney":1,"scaleScore":1,"discount":1,"cardStyle":"#"}
+    },
+    {
+        "table":"cr_goodstype",
+        "field":"domainId",
+        "data":{"goodsTypeName":"普通商品","depict":"普通商品"}
+    }
+]

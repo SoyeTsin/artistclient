@@ -1,0 +1,135 @@
+[2015-09-24 14:21:29.118] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'inert into st_artisttrack set (select a.uuid,a.room_id channelId,a.start_time st' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'inert into st_artisttrack set (select a.uuid,a.room_id channelId,a.start_time st' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\keyerDao.js:256:20
+    at Handshake.onConnect (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:59:7)
+    at Handshake.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Handshake.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-09-24 14:21:56.738] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'inert into st_artisttrack set (select a.uuid,a.room_id channelId,a.start_time st' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'inert into st_artisttrack set (select a.uuid,a.room_id channelId,a.start_time st' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\keyerDao.js:256:20
+    at Handshake.onConnect (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:59:7)
+    at Handshake.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Handshake.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-09-24 14:22:15.088] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'inert into st_artisttrack set (select a.uuid,a.room_id channelId,a.start_time st' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'inert into st_artisttrack set (select a.uuid,a.room_id channelId,a.start_time st' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\keyerDao.js:256:20
+    at Handshake.onConnect (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:59:7)
+    at Handshake.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Handshake.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-09-24 17:42:28.074] [ERROR] logger - { [Error: ER_BAD_FIELD_ERROR: Unknown column 'uuid' in 'where clause']
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  index: 0 }
+Error: ER_BAD_FIELD_ERROR: Unknown column 'uuid' in 'where clause'
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\roomSetUpDao.js:46:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-09-24 17:44:10.511] [ERROR] logger - { [Error: ER_BAD_FIELD_ERROR: Unknown column 'uuid' in 'where clause']
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  index: 0 }
+Error: ER_BAD_FIELD_ERROR: Unknown column 'uuid' in 'where clause'
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\roomSetUpDao.js:51:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)

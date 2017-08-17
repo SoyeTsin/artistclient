@@ -1,0 +1,81 @@
+[2015-03-27 18:32:07.400] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (e:\weiclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (e:\weiclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (e:\weiclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (e:\weiclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (e:\weiclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (e:\weiclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:95:17)
+    at Socket.<anonymous> (_stream_readable.js:764:14)
+    at Socket.emit (events.js:92:17)
+    at emitReadable_ (_stream_readable.js:426:10)
+    --------------------
+    at Protocol._enqueue (e:\weiclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (e:\weiclient\node_modules\mysql\lib\Connection.js:185:25)
+    at e:\weiclient\model\domainDao.js:400:20
+    at Ping.onPing [as _callback] (e:\weiclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (e:\weiclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (e:\weiclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (e:\weiclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (e:\weiclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (e:\weiclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (e:\weiclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-03-27 18:32:21.444] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (e:\weiclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (e:\weiclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (e:\weiclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (e:\weiclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (e:\weiclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.Connection.connect (e:\weiclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:95:17)
+    at Socket.stream.pause.paused (_stream_readable.js:764:14)
+    at Socket.emit (events.js:92:17)
+    at emitReadable_ (_stream_readable.js:426:10)
+    --------------------
+    at Protocol._enqueue (e:\weiclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (e:\weiclient\node_modules\mysql\lib\Connection.js:185:25)
+    at DomainDao.addComment (e:\weiclient\model\domainDao.js:400:20)
+    at Ping.onPing [as _callback] (e:\weiclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (e:\weiclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (e:\weiclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (e:\weiclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (e:\weiclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (e:\weiclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.Connection.connect (e:\weiclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-03-27 18:33:30.852] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (e:\weiclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (e:\weiclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (e:\weiclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (e:\weiclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (e:\weiclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.Connection.connect (e:\weiclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:95:17)
+    at Socket.stream.pause.paused (_stream_readable.js:764:14)
+    at Socket.emit (events.js:92:17)
+    at emitReadable_ (_stream_readable.js:426:10)
+    --------------------
+    at Protocol._enqueue (e:\weiclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (e:\weiclient\node_modules\mysql\lib\Connection.js:185:25)
+    at DomainDao.addComment (e:\weiclient\model\domainDao.js:400:20)
+    at Ping.onPing [as _callback] (e:\weiclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (e:\weiclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (e:\weiclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (e:\weiclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (e:\weiclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (e:\weiclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.Connection.connect (e:\weiclient\node_modules\mysql\lib\Connection.js:82:28)

@@ -1,0 +1,67 @@
+<div class="roomIncome infoList" ms-controller="roomSetUp">
+    <!--工会收入-->
+    <div class="roomRevenueList">
+        <h6>公屏聊天设置</h6>
+        <a href="javascript:;"><label><input type="checkbox" ms-duplex="checkboxLong"
+                                             value="textLimit"></label>禁止普通用户文字聊天
+        </a> <br>
+
+        <a href="javascript:;"><label><input type="checkbox" ms-duplex="checkboxLong"
+                                             value="speakTimeLimit"></label>普通用户进入房间<input ms-duplex="speakTimeLimit">秒后可以发言</a>
+        <br>
+
+        <a href="javascript:;"><label><input type="checkbox" ms-duplex="checkboxLong"
+                                             value="speakSpeedLimit"></label>限制文字聊天速度,每两句间隔<input
+                ms-duplex="speakSpeedLimit">秒</a>
+        <br>
+
+        <a href="javascript:;"><label><input type="checkbox" ms-duplex="checkboxLong"
+                                             value="speakLengthLimit"></label>限制普通用户文字消息，每句不超过<input
+                ms-duplex="speakLengthLimit">字节</a>
+        <br><a ms-click="checkboxClick()" href="javascript:;">保存修改</a>
+    </div>
+    <!--房间艺人收入列表-->
+    <div class="roomRevenueList">
+        <div class="tit">
+            <h5>
+                主房间管理员设置
+                <div class="clear"></div>
+            </h5>
+
+        </div>
+        <table>
+            <thead>
+            <td>身份</td>
+            <td>账号</td>
+            <td>昵称</td>
+            <td>风秀ID</td>
+            <td>权限</td>
+            <td>操作</td>
+            </thead>
+            <tr ms-repeat="channelAdminListClone">
+                <td><i>身份</i></td>
+                <td>{{el.userName}}</td>
+                <td>{{el.nickName}}</td>
+                <td>{{el.uuid}}</td>
+                <td>{{el.authority}}</td>
+                <td><a href="javascript:;" ms-click="delChannelAdmin(el,$remove)">撤销</a></td>
+            </tr>
+        </table>
+        <div class="page">
+            <ul>
+                <li>共{{countNum2}}条</li>
+                <li>第{{pageNow2}}/{{pageTotal2}}页</li>
+                <li ms-click="clickPage2(0)"><a href="javascript:;">首页</a></li>
+                <li ms-click="clickPage2(1)"><a href="javascript:;" ms-class="pageColor:(pageNow2==1)">上一页</a></li>
+                <li ms-click="clickPage2(2)"><a href="javascript:;" ms-class="pageColor:(pageTotal2==pageNow2)">下一页</a>
+                </li>
+                <li ms-click="clickPage2(3)"><a href="javascript:;">尾页</a></li>
+                <li>转到<input type="text" ms-duplex="skip2"/>页</li>
+                <li ms-click="skipPage2()"><a href="javascript:;">GO</a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript"
+        src="http://picture.show.baofeng.com/web_show_images/artistclient/js/roomSetUp.js"></script>

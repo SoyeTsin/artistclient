@@ -1,0 +1,24 @@
+<div class="ms-controller" ms-controller="channel">
+    <div ms-css-display="channelState==0?'none':'block'">
+        很抱歉，你并未拥有已开通的子房间，请联系相应会长开通子房间的权限。
+        <a ms-click="channelApply()">申请开通</a>
+    </div>
+    <div ms-css-display="channelState==1?'none':'block'">已提交子房间申请，请等待会长为您开通</div>
+    <div>
+       <table>
+           <tr>
+               <th>子房间名称</th>
+               <th>子房间ID</th>
+               <th>开通时间</th>
+               <th>是否推荐</th>
+           </tr>
+           <tr ms-repeat="channelList">
+               <td>{{el.channelName}}</td>
+               <td>{{el.channelCode}}</td>
+               <td>{{el.creDate|date("yyyy-MM-dd HH:mm:ss")}}</td>
+               <td>{{el.recommend|formatRecommend}}</td>
+           </tr>
+       </table>
+    </div>
+</div>
+<script src="http://picture.show.baofeng.com/web_show_images/artistclient/js/channel.js"></script>

@@ -1,0 +1,489 @@
+[2015-11-23 00:38:17.726] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (e:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    at TCP.onread (net.js:523:20)
+    --------------------
+    at Protocol._enqueue (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (e:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at e:\h5_proj\liveclient\model\roomSetUpDao.js:13:20
+    at Handshake.onConnect (e:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:59:7)
+    at Handshake.Sequence.end (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Handshake.Sequence.OkPacket (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (e:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 00:38:38.540] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (e:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    at TCP.onread (net.js:523:20)
+    --------------------
+    at Protocol._enqueue (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (e:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at e:\h5_proj\liveclient\model\roomSetUpDao.js:13:20
+    at Ping.onPing [as _callback] (e:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (e:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 01:19:49.758] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and ci.sociatyId !=0' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and ci.sociatyId !=0' at line 1
+    at Query.Sequence._packetToError (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (e:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    at TCP.onread (net.js:523:20)
+    --------------------
+    at Protocol._enqueue (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (e:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at e:\h5_proj\liveclient\model\mainDao.js:42:20
+    at Ping.onPing [as _callback] (e:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (e:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (e:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 16:28:13.040] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\roomSetUpDao.js:13:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 16:28:38.680] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\roomSetUpDao.js:13:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 16:30:12.595] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\roomSetUpDao.js:13:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 16:30:35.670] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\roomSetUpDao.js:13:20
+    at Handshake.onConnect (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:59:7)
+    at Handshake.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Handshake.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 16:30:44.179] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\roomSetUpDao.js:13:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 16:30:52.274] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\roomSetUpDao.js:13:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 16:31:28.830] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\roomSetUpDao.js:13:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 16:32:31.616] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\roomSetUpDao.js:13:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 16:34:23.854] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\roomSetUpDao.js:13:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 16:34:37.949] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\roomSetUpDao.js:13:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 16:34:49.707] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\roomSetUpDao.js:13:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 18:30:08.439] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and ci.sociatyId !=0' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and ci.sociatyId !=0' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\mainDao.js:42:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 18:42:52.064] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and ci.sociatyId !=0' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and ci.sociatyId !=0' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\mainDao.js:42:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 18:42:57.026] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and ci.sociatyId !=0' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and ci.sociatyId !=0' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\mainDao.js:42:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-11-23 18:43:06.834] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and ci.sociatyId !=0' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and ci.sociatyId !=0' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\mainDao.js:42:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)

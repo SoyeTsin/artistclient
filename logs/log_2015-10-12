@@ -1,0 +1,27 @@
+[2015-10-12 14:44:44.723] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where DATE_FORMAT(startDate,'%Y-%m-%d')>='2015-10-11'' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where DATE_FORMAT(startDate,'%Y-%m-%d')>='2015-10-11'' at line 1
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\artistDao.js:36:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)

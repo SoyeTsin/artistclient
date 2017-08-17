@@ -1,0 +1,282 @@
+<div class="incomeList">
+    <div id="tabContent">
+        <div class="room" style="display: block"><!--房间-->
+            <ul class="tabAddStyle roomTab">
+                <li ms-click="openSociaty(0)" style="width:50%;"><a href="javascript:;" class="active">房间信息及开播统计</a>
+                </li>
+                <li ms-click="openSociaty(1)" style="width:50%;"><a href="javascript:;">房间收入查询</a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+    <!--房间信息及开播统计-->
+    <div ms-css-display="openSociatyPage==0?'block':'none'">
+        <div class="roomInfo" ms-controller="room">
+            <div class="artistInfo">
+                <div class="socTop">
+                    <div class="topHeadImg"><img id="preview" alt="" ms-src="sociatyObj.roomUrl" name="pic"/></div>
+                    <div class="socTopInfo">
+                        <ul>
+                            <li>公会名称：<span>{{sociatyObj.channelName}}</span></li>
+                            <li>公会ID：<span>{{sociatyObj.channelName}}</span></li>
+                            <li>现有艺人数：<span>{{artistSum}}</span></li>
+                            <!--<li>房间开通时间：<span>{{sociatyObj.creDate}}</span></li>-->
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+                <div class="infoList socTable">
+                    <div class="newTit"><i></i><h4>拥有艺人名单</h4></div>
+                    <div class="laydateData playStateData right" style="float: right">
+                        <div style="float:left">
+                            <input id="liveStart" style="cursor:pointer; height:30px; padding-left:5px;"
+                                   class="laydate-icon" readonly
+                                   ms-duplex="liveStart"/>
+                            &nbsp;至&nbsp;
+                            <input id="liveEnd" style="cursor:pointer; height:30px; padding-left:5px;"
+                                   class="laydate-icon" readonly
+                                   ms-duplex="liveEnd"/>
+
+                        </div>
+                        <a href="javascript:;" ms-click="getArtistList()"
+                           style="float:left; display:block; width:50px; height:30px; line-height:30px; text-align:center; color:#FFF; background:#f484ae">查询</a>
+                    </div>
+                    <div class="clear">
+                        <br>
+                    </div>
+                    <table>
+                        <thead>
+                        <td>艺人名称</td>
+                        <td>直播时长(h)</td>
+                        <!--<td>操作</td>-->
+                        </thead>
+                        <tr ms-repeat="artistListClone">
+                            <td>{{el.nickName}}</td>
+                            <td>{{el.liveDate||'没有直播记录'}}</td>
+                            <!--<td><a href="javascript:;" ms-click="tip(el)">置顶</a>-->
+                            <!--<a href="javascript:;" ms-click="up(el)">上移</a><a-->
+                            <!--href="javascript:;" ms-click=" down(el)">下移</a></td>-->
+                        </tr>
+                    </table>
+                    <span style="float: right;color: #c0c0c0">每15日更新一次，下一次更新时间为7.16日</span>
+                </div>
+                <div class="page">
+                    <ul>
+                        <li>共{{countNum2}}条</li>
+                        <li>第{{pageNow2}}/{{pageTotal2}}页</li>
+                        <li ms-click="clickPage2(0)"><a href="javascript:;">首页</a></li>
+                        <li ms-click="clickPage2(1)"><a href="javascript:;" ms-class="pageColor:(pageNow2==1)">上一页</a>
+                        </li>
+                        <li ms-click="clickPage2(2)"><a href="javascript:;"
+                                                        ms-class="pageColor:(pageTotal2==pageNow2)">下一页</a>
+                        </li>
+                        <li ms-click="clickPage2(3)"><a href="javascript:;">尾页</a></li>
+                        <li>转到<input type="text" ms-duplex="skip2"/>页</li>
+                        <li ms-click="skipPage2()"><a href="javascript:;" class="pageGo">GO</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!--<div class="roomPcu">-->
+            <!--&lt;!&ndash;房间PCU&ndash;&gt;-->
+            <!--<div class="newTit"><i></i><h4>房间在线情况</h4></div>-->
+            <!--<div class="roomPucButtion">-->
+            <!--<a href="javascript:;">昨天</a>-->
+            <!--<a href="javascript:;">过去一周</a>-->
+            <!--<a href="javascript:;" class="active">过去30天</a>-->
+            <!--</div>-->
+            <!--<div class="clear"></div>-->
+            <!--<div id="roomPuc" style="width:1111px; height:400px;">-->
+
+            <!--</div>-->
+            <!--<div class="clear"></div>-->
+            <!--<ul>-->
+            <!--<span>提示：</span>-->
+            <!--<li>1.在线人数及房间IP从整点开始每小时统计一次，次数值仅记录稳定在线人数（非峰值在线人数）</li>-->
+            <!--<li>2.系统将会对房间在线进行检测，若发现异常（如：挂机软件等），则异常IP不会计算到房间在线中</li>-->
+            <!--</ul>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <!--//房间信息及开播统计-->
+    <!--房间收入查询-->
+    <div ms-css-display="openSociatyPage==1?'block':'none'">
+        <div class="roomIncome infoList" ms-controller="artistIncome">
+            <!--页面显示在这-->
+            <div class="clear"></div>
+            <div class="clear"></div>
+            <div class="tableTit">
+                <div id="activeDataPull" class="pullDown marginT20">
+                    <span>{{sociaty.sociatyName}}</span><i></i>
+                    <ul>
+                        <li ms-repeat="sociatyLists" ms-click="changeSelect(el)">{{el.sociatyName}}</li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+            <h4 style="height:30px; margin:20px 0;">
+                <span class="arisIncomeTitSpan"
+                      style="font-weight:bold; float:left; line-height:30px; margin: 0 10px 0 20px;">公会收入</span>
+
+                <div class="laydateData playStateData right">
+                    <div style="float:left">
+                        <input id="arisIncomeStart2" style="cursor:pointer; height:30px; padding-left:5px;"
+                               class="laydate-icon" readonly
+                               ms-duplex="artistIncome_startDate"/>
+                        &nbsp;至&nbsp;
+                        <input id="arisIncomeEnd2" style="cursor:pointer; height:30px; padding-left:5px;"
+                               class="laydate-icon" readonly
+                               ms-duplex="artistIncome_endDate"/>
+
+                    </div>
+                    <a href="javascript:;" ms-click="getCycleConsume()"
+                       style="float:left; display:block; width:50px; height:30px; line-height:30px; text-align:center; color:#FFF; background:#f484ae">查询</a>
+                </div>
+                <div class="clear"></div>
+                <div style="color: red;float: right; font-size: 12px; position: relative; top: 20px;">
+                    {{smsg}}
+                </div>
+                <div class="clear"></div>
+            </h4>
+            <div class="clear"></div>
+            <div class="userActionData">
+                <div class="userActionList"><!--用户观看时长-->
+                    <div class="clear"></div>
+                    <div class="rechargeData arisIncome">
+                        <table>
+                            <thead>
+                            <td>公会名称</td>
+                            <td>累计收入</td>
+                            <td>昨日收入</td>
+                            <td>上周收入</td>
+                            <td>时间段收入</td>
+                            </thead>
+                            <tr>
+                                <td>{{sociaty.channelName}}</td>
+                                <td>{{sociatyIncome||0}}</td>
+                                <td>{{sociatyIncomeYesIncome||0}}</td>
+                                <td>{{sociatyIncomeWeekIncome||0}}</td>
+                                <td>{{sociatyIncomeCycleIncome||0}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="clear"></div>
+            <h4 class="marginB10 marginT60" style="margin:10px 0;">
+                <span class="arisIncomeTitSpan" style=" display:block;font-weight:bold;margin: 0 0 10px 20px;">公会艺人收入列表(总收入：{{sociatyIncomeAll}})</span>
+
+
+            </h4>
+
+            <div class="clear"></div>
+            <div class="userActionData">
+                <div class="userActionList"><!--用户观看时长-->
+                    <div class="clear"></div>
+                    <div class="rechargeData arisIncome" style="padding-bottom: 20px;">
+                        <table>
+                            <thead>
+                            <td>UUID</td>
+                            <td>艺人名称</td>
+                            <td>累计收入</td>
+                            <td>订阅数</td>
+                            <td>操作</td>
+                            </thead>
+                            <tr ms-repeat="artistIncomeListClone">
+                                <td>{{el.uuid}}</td>
+                                <td>{{el.nick}}</td>
+                                <td>{{el.income||0}}</td>
+                                <td>{{el.sum||0}}</td>
+                                <td><a href="javascript:;" ms-click="selArtIncome(el)">收入详情</a></td>
+                            </tr>
+                        </table>
+                        <!--<div ms-css-display="artistList==''?'block':'none'" style="text-align: center;color: red">-->
+                        <!--该频道旗下没有艺人-->
+                        <!--</div>-->
+                        <div class="page">
+                            <ul>
+                                <li>共{{countNum}}条</li>
+                                <li>第{{pageNow}}/{{pageTotal}}页</li>
+                                <li ms-click="clickPage(0)"><a href="javascript:;">首页</a></li>
+                                <li ms-click="clickPage(1)"><a href="javascript:;"
+                                                               ms-class="pageColor:(pageNow==1)">上一页</a>
+                                </li>
+                                <li ms-click="clickPage(2)"><a href="javascript:;"
+                                                               ms-class="pageColor:(pageTotal==pageNow)">下一页</a>
+                                </li>
+                                <li ms-click="clickPage(3)"><a href="javascript:;">尾页</a></li>
+                                <li>转到<input type="text" ms-duplex="skip"/>页</li>
+                                <li ms-click="skipPage()"><a href="javascript:;" class="pageA">GO</a></li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                        <!--<li><a ><i></i>修改信息</a></li>
+                    </ul>-->
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <h4 class="marginB10 marginT60">
+                <span class="arisIncomeTitSpan" style="font-weight:bold">艺人收入详情</span>
+                <i>{{yirenjiazai}}</i>
+                <div class="clear"></div>
+                <div class="userActionData">
+                    <div class="userActionList"><!--用户观看时长-->
+                        <div class="clear"></div>
+                        <div class="rechargeData arisIncome">
+                            <table>
+                                <thead>
+                                <td>昵称</td>
+                                <td>时间</td>
+                                <td>礼物类型</td>
+                                <td>数量</td>
+                                <td>营收</td>
+                                </thead>
+                                <tr ms-repeat="giveGiftListClone">
+                                    <td>{{el.nick||el.uuid}}</td>
+                                    <td>{{el.cre_time|date("yyyy-MM-dd HH:mm:ss")}}</td>
+                                    <!--<td><img src="images/gift.png"/></td>-->
+                                    <td>{{el.giftName||"守护"}}</td>
+                                    <td>{{el.gift_num}}</td>
+                                    <td>{{el.money_dif}}</td>
+                                </tr>
+                            </table>
+                            <div class="page">
+                                <ul>
+                                    <li>共{{countNum2}}条</li>
+                                    <li>第{{pageNow2}}/{{pageTotal2}}页</li>
+                                    <li ms-click="clickPage2(0)"><a href="javascript:;">首页</a></li>
+                                    <li ms-click="clickPage2(1)"><a href="javascript:;"
+                                                                    ms-class="pageColor:(pageNow2==1)">上一页</a></li>
+                                    <li ms-click="clickPage2(2)"><a href="javascript:;"
+                                                                    ms-class="pageColor:(pageTotal2==pageNow2)">下一页</a>
+                                    </li>
+                                    <li ms-click="clickPage2(3)"><a href="javascript:;">尾页</a></li>
+                                    <li>转到<input type="text" ms-duplex="skip2"/>页</li>
+                                    <li ms-click="skipPage2()"><a href="javascript:;">GO</a></li>
+                                    <div class="clear"></div>
+                                </ul>
+                            </div>
+
+                            <div class="clear"></div>
+                            <!--<li><a ><i></i>修改信息</a></li>
+                        </ul>-->
+                        </div>
+                    </div>
+                </div>
+            </h4>
+
+
+        </div>
+    </div>
+
+</div>
+<!--//房间收入查询-->
+<script src="http://picture.show.baofeng.com/web_show_images/artistclient/lib/echarts-main.js"></script>
+<script type="text/javascript" src="js/room.js"></script>
+<script src="js/artistIncome.js"></script>

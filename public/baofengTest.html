@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<iframe src="http://sso.baofeng.net/api/minilogin/pcweb?from=fengxiu_pc&hiden_close=1&next_action=http://localhost:63342/h5_proj/artistclient/public/baofengTest.html"
+        frameborder="0" height="336px" width="543px">
+
+</iframe>
+<script>
+
+    window.onload = function () {
+        alert(getCookies('bfuid'));
+        function getCookies(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg))
+                return unescape(arr[2]);
+            else
+                return null;
+        }
+    }
+</script>
+</body>
+</html>
+<!--135601920085188990-->

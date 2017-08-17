@@ -1,0 +1,49 @@
+<div class="ms-controller" ms-controller="blacklist">
+    黑名单管理
+    <select name="selectAge" id="selectAge">
+        <option value="el.channelCode" ms-repeat="sociatyList">{{el.channelName}}</option>
+    </select>
+    <input type="text" placeholder="请输入风秀ID" ms-duplex="searchId">
+    <a href="javascript:;" ms-click="search()">查询</a>
+    <input type="text" placeholder="请输入用户ID" ms-duplex="searchId2">
+    <a href="javascript:;" ms-click="search2()">查询</a>
+
+    <em>封锁日期区间：</em> <input id="start" style="cursor:pointer" class="laydate-icon" placeholder="请输入开始日期"
+                            ms-duplex="cycle.startDate"/>
+    <em>至：</em> <input id="end" style="cursor:pointer" class="laydate-icon" placeholder="请输入结束日期"
+                       ms-duplex="cycle.endDate"/>
+
+    <div>
+        <table>
+            <tr>
+                <th><input type="checkbox" ms-click="allCheckbox()"></th>
+                <th>昵称</th>
+                <th>风秀ID</th>
+                <th>封号时间</th>
+                <th>操作<a ms-click="delBlacklists()" href="javascript:;">批量解封</a></th>
+            </tr>
+            <tr ms-repeat="blacklistListClone">
+                <th><input type="checkbox" ms-duplex="checkboxLong" ms-value="el.uuid"></th>
+                <td>{{el.nickName}}</td>
+                <td>{{el.uuid}}</td>
+                <td>{{el.creDate}}</td>
+                <td><a href="javascript:;" ms-click="delBlacklist(el,$remove)">解封</a></td>
+            </tr>
+        </table>
+        <div class="page">
+            <ul>
+                <li>共{{countNum2}}条</li>
+                <li>第{{pageNow2}}/{{pageTotal2}}页</li>
+                <li ms-click="clickPage2(0)"><a href="javascript:;">首页</a></li>
+                <li ms-click="clickPage2(1)"><a href="javascript:;" ms-class="pageColor:(pageNow2==1)">上一页</a></li>
+                <li ms-click="clickPage2(2)"><a href="javascript:;" ms-class="pageColor:(pageTotal2==pageNow2)">下一页</a>
+                </li>
+                <li ms-click="clickPage2(3)"><a href="javascript:;">尾页</a></li>
+                <li>转到<input type="text" ms-duplex="skip2"/>页</li>
+                <li ms-click="skipPage2()"><a href="javascript:;">GO</a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="http://picture.show.baofeng.com/web_show_images/artistclient/js/blacklist.js"></script>

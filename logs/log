@@ -1,0 +1,54 @@
+[2016-09-06 16:16:21.185] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AND TO_DAYS(start_time)<=TO_DAYS(?)' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AND TO_DAYS(start_time)<=TO_DAYS(?)' at line 1
+    at Query.Sequence._packetToError (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (J:\h5_proj\artistclient\node_modules\mysql\lib\Connection.js:82:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    --------------------
+    at Protocol._enqueue (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (J:\h5_proj\artistclient\node_modules\mysql\lib\Connection.js:185:25)
+    at J:\h5_proj\artistclient\model\keyerDao.js:322:20
+    at Handshake.onConnect (J:\h5_proj\artistclient\node_modules\mysql\lib\Pool.js:59:7)
+    at Handshake.Sequence.end (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Handshake.Sequence.OkPacket (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (J:\h5_proj\artistclient\node_modules\mysql\lib\Connection.js:82:28)
+[2016-09-06 16:16:29.127] [ERROR] logger - { [Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AND TO_DAYS(start_time)<=TO_DAYS(?)' at line 1]
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  index: 0 }
+Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?) AND TO_DAYS(start_time)<=TO_DAYS(?)' at line 1
+    at Query.Sequence._packetToError (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (J:\h5_proj\artistclient\node_modules\mysql\lib\Connection.js:82:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    --------------------
+    at Protocol._enqueue (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (J:\h5_proj\artistclient\node_modules\mysql\lib\Connection.js:185:25)
+    at J:\h5_proj\artistclient\model\keyerDao.js:322:20
+    at Handshake.onConnect (J:\h5_proj\artistclient\node_modules\mysql\lib\Pool.js:59:7)
+    at Handshake.Sequence.end (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Handshake.Sequence.OkPacket (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (J:\h5_proj\artistclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (J:\h5_proj\artistclient\node_modules\mysql\lib\Connection.js:82:28)

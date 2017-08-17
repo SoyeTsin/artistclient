@@ -1,0 +1,160 @@
+<!--选项卡内容-->
+<div id="tabContent">
+    <div class="room" style="display: block"><!--房间-->
+        <ul class="tabAddStyle roomTab">
+            <li ms-click="openSociaty(2)" style="width:50%"><a href="javascript:;" class="active">房间管理</a></li>
+            <li ms-click="openSociaty(3)" style="width:50%"><a href="javascript:;">黑名单管理</a></li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</div>
+
+<!--房间管理-->
+<div ms-css-display="openSociatyPage==2?'block':'none'">
+    <div ms-controller="roomSetUp">
+        <div class="newTit bigNewTit"><i></i><h4>公屏聊天设置</h4></div>
+        <div class="roomManage">
+            <ul>
+                <li>
+                    <input type="checkbox" ms-duplex="checkboxLong" value="textLimit" id="textLimit">
+                    <label for="textLimit"></label>禁止普通用户文字聊天
+                </li>
+                <li>
+                    <input type="checkbox" ms-duplex="checkboxLong" value="speakTimeLimit" id="speakTimeLimit">
+                    <label for="speakTimeLimit"></label>普通用户进入房间<input type="text" ms-duplex="speakTimeLimit"/>秒后可以发言
+                </li>
+                <li>
+                    <input type="checkbox" ms-duplex="checkboxLong" value="speakSpeedLimit" id="speakSpeedLimit">
+                    <label for="speakSpeedLimit"></label>限制文字聊天速度,每两句间隔<input type="text" ms-duplex="speakSpeedLimit"/>秒
+                </li>
+                <li>
+                    <input type="checkbox" ms-duplex="checkboxLong" value="speakLengthLimit" id="speakLengthLimit">
+                    <label for="speakLengthLimit"></label>限制普通用户文字消息，每句不超过<input type="text"
+                                                                                 ms-duplex="speakLengthLimit"/>字节
+                </li>
+                <li><a ms-click="checkboxClick()" href="javascript:;">保存修改</a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="roomIncome infoList" ms-css-display="_mainModel.root ==1?'none':'block'">
+            <div class="newTit bigNewTit"><i></i><h4>主房间管理员设置</h4></div>
+            <div class="roomManageTable">
+                <table>
+                    <thead>
+                    <td>昵称</td>
+                    <td>风秀ID</td>
+                    <td>权限</td>
+                    <td>操作</td>
+                    </thead>
+                    <tr ms-repeat="channelAdminListClone">
+                        <td>{{el.nickName}}</td>
+                        <td>{{el.uuid}}</td>
+                        <td>管理员</td>
+                        <td><a href="javascript:;" ms-click="delChannelAdmin(el,$remove)">撤销</a></td>
+                    </tr>
+                </table>
+                <div class="page">
+                    <ul>
+                        <li>共{{countNum2}}条</li>
+                        <li>第{{pageNow2}}/{{pageTotal2}}页</li>
+                        <li ms-click="clickPage2(0)"><a href="javascript:;">首页</a></li>
+                        <li ms-click="clickPage2(1)"><a href="javascript:;" ms-class="pageColor:(pageNow2==1)">上一页</a>
+                        </li>
+                        <li ms-click="clickPage2(2)"><a href="javascript:;"
+                                                        ms-class="pageColor:(pageTotal2==pageNow2)">下一页</a>
+                        </li>
+                        <li ms-click="clickPage2(3)"><a href="javascript:;">尾页</a></li>
+                        <li>转到<input type="text" ms-duplex="skip2"/>页</li>
+                        <li ms-click="skipPage2()"><a href="javascript:;" class="pageGo">GO</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//房间管理-->
+<!--黑名单设置-->
+<div class="infoList" ms-css-display="openSociatyPage==3?'block':'none'">
+    <div class="ms-controller" ms-controller="blacklist">
+        <div class="newTit bigNewTit"><i></i><h4>黑名单管理</h4>
+            <!--        <select name="selectAge" id="selectAge">
+                        <option value="el.channelCode" ms-repeat="sociatyList">{{el.channelName}}</option>
+                    </select>
+            -->
+            <div class="titInquiry">
+                <input type="text" placeholder="请输入风秀ID" ms-duplex="searchId">
+                <a href="javascript:;" ms-click="search()">查询</a>
+                <input type="text" placeholder="请输入用户ID" ms-duplex="searchId2">
+                <a href="javascript:;" ms-click="search2()">查询</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="titBom">
+            <div>
+                <span>筛选</span>
+                <em>封锁日期区间：</em>
+                <input id="blackStart" style="cursor:pointer" class="laydate-icon" placeholder="请输入开始日期"
+                       ms-duplex="cycle.startDate"/>&nbsp;&nbsp;至&nbsp;&nbsp;
+                <input id="end" style="cursor:pointer" class="laydate-icon" placeholder="请输入结束日期"
+                       ms-duplex="cycle.endDate"/>
+            </div>
+            <div>
+                <span>操作</span>
+                <em style=" display:inline-block; min-width:110px;">对选中的<i>{{porMun}}</i>人</em><a href="javascript:;"
+                                                                                                  ms-click="delBlacklists()"
+                                                                                                  class="aSearch">解封</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="roomManage blacklist">
+            <table>
+                <thead>
+                <td ms-click="checkboxLongMun()"><input type="checkbox" ms-click="allCheckbox()" id="allCheckbox"
+                                                        ms-duplex="checkboxLong">
+                    <label for="allCheckbox"></label>
+                </td>
+                <!--<td>账号</td>-->
+                <td>昵称</td>
+                <td>风秀ID</td>
+                <td>封号时间</td>
+                <!--<td>封号操作人</td>-->
+                <td>操作</td>
+                </thead>
+                <tr ms-repeat="blacklistListClone">
+                    <td ms-click="checkboxLongMun()"><input type="checkbox" ms-duplex="checkboxLong" ms-value="el.uuid"
+                                                            ms-attr-id="el.uuid"><label
+                            ms-attr-for="{{el.uuid}}"></label></td>
+                    <!--<td>{{el.userName}}</td>-->
+                    <td>{{el.nickName}}</td>
+                    <td>{{el.uuid}}</td>
+                    <td>{{el.creDate}}</td>
+                    <!--<td>{{el.executorName}}</td>-->
+                    <td><a href="javascript:;" ms-click="delBlacklist(el,$remove)" class="aButtion">解封</a></td>
+                </tr>
+            </table>
+            <div class="page" ms-click="cleanBox()">
+                <ul>
+                    <li>共{{countNum2}}条</li>
+                    <li>第{{pageNow2}}/{{pageTotal2}}页</li>
+                    <li ms-click="clickPage2(0)"><a href="javascript:;">首页</a></li>
+                    <li ms-click="clickPage2(1)"><a href="javascript:;" ms-class="pageColor:(pageNow2==1)">上一页</a></li>
+                    <li ms-click="clickPage2(2)"><a href="javascript:;"
+                                                    ms-class="pageColor:(pageTotal2==pageNow2)">下一页</a>
+                    </li>
+                    <li ms-click="clickPage2(3)"><a href="javascript:;">尾页</a></li>
+                    <li>转到<input type="text" ms-duplex="skip2"/>页</li>
+                    <li ms-click="skipPage2()"><a href="javascript:;" class="pageGo">GO</a></li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//黑名单设置-->
+<script src="http://picture.show.baofeng.com/web_show_images/artistclient/lib/echarts-main.js"></script>
+<script src="http://picture.show.baofeng.com/web_show_images/artistclient/js/roomSetUp.js"></script>
+<script src="http://picture.show.baofeng.com/web_show_images/artistclient/js/blacklist.js"></script>

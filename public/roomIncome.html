@@ -1,0 +1,78 @@
+<!--房间收入查询-->
+<div>
+    <div class="roomIncome infoList" ms-controller="roomIncome">
+        <div><a href="javascript:;"
+                style="display: block;width: 60px;height: 25px;background-color: #F35690;text-align: center;color: white"
+                ms-click="shuaxin()">刷新</a>
+        </div>
+        <div>
+            <select name="selectAge" id="selectAge" ms-duplex="clickSociatyObj" style="width: 100px;height: 30px"
+                    ms-change="clickSociaty()">
+                <!--<option value="">请选择</option>-->
+                <option ms-repeat="sociatyLists" ms-value="el.channelCode"> {{el.channelName}}</option>
+            </select>
+        </div>
+        <!--工会收入-->
+        <div class="socIncome">
+            <div class="newTit"><i></i><h4>工会收入</h4></div>
+            <table>
+                <thead>
+                <td>累计收入</td>
+                <td>昨日收入</td>
+                <td>上周收入</td>
+                <td><input placeholder="请输入日期" id="start" style="cursor:pointer" class="laydate-icon"
+                           ms-duplex="newDate">
+                </td>
+                <!--<td>当前账户余额</td>-->
+                </thead>
+                <tr>
+                    <td>{{sociatyIncome.sum||0}}</td>
+                    <td>{{sociatyIncome.yesDay||0}}</td>
+                    <td>{{sociatyIncome.week||0}}</td>
+                    <td><span class="dataWarning" ms-visible="!newAsset">请选择日期</span>
+                        <span ms-visible="newAsset">{{newAsset}}</span>
+                    </td>
+                    <!--<td>{{sociatyIncome.asset}}</td>-->
+                </tr>
+            </table>
+        </div>
+        <!--房间艺人收入列表-->
+        <div class="roomRevenueList">
+            <div class="newTit"><i></i><h4>房间艺人收入列表</h4></div>
+            <table>
+                <thead>
+                <td>艺人名称</td>
+                <td>直播时间</td>
+                <td>艺人累计收入</td>
+                <td>操作</td>
+                </thead>
+                <tr ms-repeat="artistAssetListClone">
+                    <td>{{el.nickName}}</td>
+                    <td>{{el.liveDate||'没有直播记录'}}</td>
+                    <td>{{el.income||0}}</td>
+                    <td><a href="javascript:;" ms-click="tip(el)">置顶</a><a href="javascript:;" ms-click="up(el)"> 上移</a><a
+                            href="javascript:;" ms-click=" down(el)">下移</a></td>
+                </tr>
+            </table>
+            <div class="page">
+                <ul>
+                    <li>共{{countNum2}}条</li>
+                    <li>第{{pageNow2}}/{{pageTotal2}}页</li>
+                    <li ms-click="clickPage2(0)"><a href="javascript:;">首页</a></li>
+                    <li ms-click="clickPage2(1)"><a href="javascript:;" ms-class="pageColor:(pageNow2==1)">上一页</a></li>
+                    <li ms-click="clickPage2(2)"><a href="javascript:;"
+                                                    ms-class="pageColor:(pageTotal2==pageNow2)">下一页</a>
+                    </li>
+                    <li ms-click="clickPage2(3)"><a href="javascript:;">尾页</a></li>
+                    <li>转到<input type="text" ms-duplex="skip2"/>页</li>
+                    <li ms-click="skipPage2()"><a href="javascript:;" class="pageGo">GO</a></li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--//房间收入查询-->
+<script src="http://picture.show.baofeng.com/web_show_images/artistclient/js/roomIncome.js"></script>

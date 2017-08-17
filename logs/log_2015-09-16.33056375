@@ -1,0 +1,61 @@
+[2015-09-16 15:33:04.498] [ERROR] logger - { [Error: ER_BAD_FIELD_ERROR: Unknown column 'start_time' in 'where clause']
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  index: 0 }
+Error: ER_BAD_FIELD_ERROR: Unknown column 'start_time' in 'where clause'
+    at Query.Sequence._packetToError (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:48:14)
+    at Query.ErrorPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Query.js:82:18)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20)
+    --------------------
+    at Protocol._enqueue (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:135:48)
+    at PoolConnection.Connection.query (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:185:25)
+    at j:\h5_proj\liveclient\model\keyerDao.js:234:20
+    at Ping.onPing [as _callback] (j:\h5_proj\liveclient\node_modules\mysql\lib\Pool.js:94:5)
+    at Ping.Sequence.end (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:96:24)
+    at Ping.Sequence.OkPacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\sequences\Sequence.js:105:8)
+    at Protocol._parsePacket (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:271:23)
+    at Parser.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Parser.js:77:12)
+    at Protocol.write (j:\h5_proj\liveclient\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (j:\h5_proj\liveclient\node_modules\mysql\lib\Connection.js:82:28)
+[2015-09-16 15:51:18.254] [ERROR] logger - [ { [Error: ER_DUP_ENTRY: Duplicate entry '199000004' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '100000007' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '100000013' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '100000007' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '100000013' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '100000013' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '100000013' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '1111' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '1111' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '100000004' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '100000013' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '100000004' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '177000008' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '177000008' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '177000008' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '1111' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '100000003' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '145000013' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '101000016' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '101000013' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '101000013' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '100000004' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '177000008' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '101000015' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '1111' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '164000011' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '164000011' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '100000003' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '164000011' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '1111' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '101000014' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '101000014' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 },
+  { [Error: ER_DUP_ENTRY: Duplicate entry '101000015' for key 'PRIMARY'] code: 'ER_DUP_ENTRY', errno: 1062, sqlState: '23000', index: 0 } ]
+[2015-09-16 15:51:35.365] [ERROR] logger - []

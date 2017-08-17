@@ -1,0 +1,258 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+header { background: #F35690; height: 88px; min-width: 1200px !important; }
+.main { width: 1200px; margin: 0 auto; }
+.mainCenter { border: 1px solid #e5e5e5; clear: both; padding-bottom: 30px; }
+.marB10 { margin-bottom: 10px; }
+.logo { float: left; position: relative; top: 18px; }
+.topInfo { float: right; font-size: 12px; color: #FFF; margin-top: 30px; }
+a.fanhui { display: inline-block; width: 87px; height: 30px; text-align: center; background: #F4659A; color: #FFF; float: right; margin-left: 5px; border: 1px solid #FFF; border-radius: 15px; line-height: 30px; }
+a.quit { display: inline-block; width: 87px; height: 30px; text-align: center; background: #F4659A; color: #FFF; margin-left: 5px; border: 1px solid #FFF; border-radius: 15px; line-height: 30px; }
+a.quit:hover { background: rgba(244, 101, 154,.5); }
+a.quit:active { background: rgba(244, 101, 154,.9) }
+.quit i { display: inline-block; width: 15px; height: 15px; background: url(http://picture.show.baofeng.com/web_show_images/artistclient/images/ico-quit.png); position: relative; top: 4px; margin-right: 3px; }
+/**/
+
+/*index*/
+.index { background: url(http://picture.show.baofeng.com/web_show_images/artistclient/images/indexBomBg.png) center bottom no-repeat #eaebee; padding-bottom: 213px }
+.indexTop { padding-top: 60px; }
+.indexTop h3 { font-size: 16px; text-align: center; margin-bottom: 20px; }
+.indexTop div { position: relative; height: 103px; }
+.indexTop div span { position: absolute; display: block; width: 560px; border-bottom: 1px solid #ccc; top: 23px; }
+.indexTop div span:nth-child(1) { left: 0; }
+.indexTop div span:nth-child(3) { right: 0; }
+.indexTop div i { position: absolute; display: block; width: 40px; height: 40px; border: 1px solid #bdbdbd; border-radius: 40px; background: url(http://picture.show.baofeng.com/web_show_images/artistclient/images/user-icon.png) no-repeat; left: 50%; margin-left: -20px; }
+.indexTop div i.red-ma { background-position: 2px -33px; }
+.indexTop div i.blue-ma { background-position: 2px -102px; }
+.indexTop div i.yellow-ma { background-position: 2px -69px; }
+.indexTop div i.purple-ma { background-position: 2px 8px; }
+.tabAddStyle a.active {border-bottom: 2px solid #F35690;height: 53px; }
+/*sociatyList*/
+.sociatyList ul li { float: left; margin: 0 38px 30px 38px; border: 2px solid #e6e7e8 }
+.sociatyImg { display: block; height: 200px; overflow: hidden; }
+.sociatyList ul li img { width: 220px; min-height: 200px; }
+.sociatyListText { height: 80px; background: #FFF; font-size: 12px; text-align: center; color: #494949 }
+.sociatyListText h4 { font-size: 16px; padding-top: 17px; }
+.sociatyListText span { display: block; padding-top: 7px; }
+/**/
+.userInfo, .incomeRecord { height: 190px; background: #FFF; }
+.incomeView { margin-bottom: 10px; }
+.userInfo { width: 339px; float: left; padding: 0 10px; border-right: 1px solid #552a6f; background: #6A358B; }
+.perImg { float: left; text-align: center; margin-left: 20px; }
+.perImg img { width: 130px; height: 130px; position: relative; top: 30px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; border-radius: 65px/*测试显示*/; background: #0CC }
+.perAccount { float: right; width: 172px; height: 190px; display: table; }
+.align { vertical-align: middle; display: table-cell; }
+.perAccount h3 { color: #FFF; font-size: 22px; line-height: 55px; }
+.perAccount span { color: #f35892; }
+.incomeRecord { width: 840px; float: right; background: #6A358B; }
+.incomeRecord h4 { height: 40px; background: #552a6f; text-align: center; line-height: 40px; color: #fff }
+.incomeRecord > ul { width: 100%; text-align: center; }
+.incomeRecord > ul > li { width: 25%; float: left; position: relative }
+.incomeRecord > ul > li p, .select { font-weight: bold; font-size: 14px; height: 25px; padding-top: 40px; color: #FFF; }
+.incomeRecord > ul > li > span { font-size: 30px; color: #f1a54d; display: block; position: absolute; top: 72px; width: 100%; text-align: center; font-family: 微软雅黑, Arial, 宋体, sans-serif; border-left: 1px solid #552a6f; }/*font-family:"Times New Roman", Times, serif;font-family:"MS Serif", "New York", serif*/
+.incomeRecord > ul > li:first-child span { border-left: none !important }
+/*incomeData*/
+.incomeData input { width: 135px; height: 30px; border: 1px solid #FFF; background: #552a6f; color: #FFF; border-radius: 3px; position: relative; top: 32px; left: 39px; text-align: center; cursor: pointer }
+/*assetTab*/
+.content { min-height: 500px; background: #FFF; }
+.selectedH3 { background: #FFF !important; border-top: 5px solid #f24b88; height: 55px !important; line-height: 50px !important; }
+#selectAge { position: absolute; right: 0; top: 0; }
+.assetTab { border-bottom: 1px solid #EAEAEA; background: #FFF; }
+#tabTitle { position: relative; }
+#tabTitle h3 { width: 50%; height: 60px; float: left; font-weight: bold; text-align: center; line-height: 60px; background: #F4F4F4; cursor: pointer; position: relative; }
+.tabTitleMenu { position: absolute; top: 0; padding-top: 0px !important; width: 100%; }
+.tabTitleMenu .csOptions ul { height: 125px; }
+div.tabTitleList { position: relative; z-index: 100; width: 100%; }
+.tabTitleList { width: 100%; position: relative; right: 1px }
+.tabTitleList > span { border: 1px solid #EAEAEA !important; -moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; border-color: inherit; -webkit-transition: background 0.2s, border-color 0.2s; transition: background 0.2s, border-color 0.2s; background: #FFF; }
+.tabTitleList .csOptions ul li > span { width: 100% !important; float: left; text-align: left !important; line-height: 25px; }
+.tabTitleList.csActive .csOptions { opacity: 1; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; }
+.tabTitleList .csOptions li span:hover, .tabTitleList li.cs-focus span { background: #f5f3ec; }
+/*select*/
+.sociatyDown { position: absolute; top: 0; right: 0; width: 147px; background: #f484ae; }
+.sociatyDown > span { display: block; width: 100%; height: 60px; line-height: 60px; background: #f484ae url(http://picture.show.baofeng.com/web_show_images/artistclient/images/DropDownArrow.png) right 10px center no-repeat; color: #FFF; text-align: center; cursor: pointer; }
+.selectSociatyDown { border-top: 5px solid #f24b88; height: 55px !important; line-height: 50px !important; background-position: 127px 23px !important }
+.sociatyDown ul li a, .sociatyDown > span a { display: block; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.sociatyDown > span a { width: 118px; color: #FFF; padding: 0 10px }
+.sociatyDown ul li a { width: 140px; color: #000; }
+.sociatyDown ul { position: absolute; right: 0; top: 60px; border: 1px solid #f485ad; background: #FFF; z-index: 999; }
+.sociatyDown ul li { cursor: pointer; width: 162px; height: 35px; line-height: 35px; padding-left: 30px; }
+.sociatyDown ul li:hover { background: #f485ad; color: #FFF; }
+.sociatyDown ul li:hover a { color: #FFF; }
+.sociatyDown { }
+/*滚动条*/
+.sociatyinitList { max-height: 220px; overflow: auto; position: relative; }
+/*//select*/
+.viewport { width: 100px; height: 200px; overflow: hidden; position: relative; }
+.overview { position: absolute; left: 0; top: 0; }
+.scrollbar { position: relative; float: right; }
+.thumb { background: #f24b88; height: 20px; width: 5px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+/*artistEntry*/
+
+.artistTab li { width: 50%; }
+.artistTab .active{ border-bottom:2px solid #f24b88;}
+.roomTab li { width: 25%; }
+.tabAddStyle li { float: left; text-align: center; }
+.tabAddStyle li > a { display: block; color: #222; height: 55px; line-height: 55px; }
+.artistStyle { border-bottom: 5px solid #f24b88; height: 50px !important; }
+/*---------------------------artistMain-----------------*/
+.artistMain { padding: 30px; background: #FFF; }
+/*infoList*/
+.infoList { position: relative; }
+.infoList ul li { width: 100%; float: left; text-align: center; line-height: 30px; }
+.infoList ul li:nth-child(odd) h5 { background: #efefef }
+.infoList ul li h5 { float: left; width: 35%; text-align: left; padding-left: 15%; }
+.infoList ul li span { display: block; float: right; width: 35%; text-align: left; padding-left: 15%; }
+.infoList ul li:nth-child(odd) span { background: #f7f7f7 }
+.infoList ul li span a:hover { text-decoration: underline; }
+.infoList ul li span a+a { margin-left: 10px; }
+.infoList ul li span a:nth-child(1) { color: #0F0 }
+.infoList ul li span a:nth-child(2), .red { color: #F00 }
+.infoList table { width: 100%; border-bottom: 1px solid #EAEAEA; }
+.infoList table tr td { line-height: 30px; text-align: center; color: #313131; }
+.infoList table tr:nth-child(even) td { background: #f7f7f7 }
+.infoList table thead { background: #f484ae; height: 30px; line-height: 30px; color: #FFF; }
+.infoList table thead tr td { color: #FFF }
+.infoList table tbody td { font-size: 12px; }
+.infoList table td input { height: 32px; width: 130px; padding: 0 5px; }
+.infoList table td a { text-decoration: underline; color: #f3548f; }
+.infoTit { padding: 0 10px; line-height: 30px; background: #ebebeb }
+/*artistInfo*/
+.artistInfo { margin: 40px; border: 1px solid #e7e7e7; padding-bottom: 20px; }
+.artistImg { width: 270px; height: 260px; background: #F7F7F7; position: relative; float: left; border-right: 1px solid #E7E7E7 }
+.artistImg img, .artistImg > div { width: 180px; }
+.artistImg > div { overflow: hidden; position: absolute; top: 50%; left: 50%; margin: -90px 0 0 -90px; }
+.artistInfoList { position: relative; top: 47px; left: 93px; float: left; width: 680px; height: 260px; }
+.artistInfoList ul { width: 340px; position: relative; float: left; }
+.artistInfoList ul li { line-height: 36px; color: #808080 }
+.artistInfoList ul li span { color: #000; }
+/*incomeQuery*/
+.incomeQueryTop { margin-bottom: 15px; height: 30px; }
+.incomeQueryTop div { float: left; color: #868686 }
+.incomeQueryTop input { width: 130px; color: #868686; height: 30px; padding: 0 5px; }
+.incomeQueryTop span { display: block; float: right; line-height: 30px; }
+.incomeQueryTop span strong { font-size: 16px; color: #F00 }
+/*fansInfo*/
+.fansInfo table tr td a { color: #0097e5; text-decoration: underline }
+.fans { margin-bottom: 20px; }
+/*-----------------room------------------------*/
+.tit h5 { background: #EBEBEB; line-height: 30px; padding-left: 10px; }
+.tit span, .tit .titDate { float: right }
+.tit span div { float: left; }
+.tit span i { display: inline-block; width: 16px; height: 16px; border-radius: 8px; position: relative; top: 3px; margin: 0 5px 0 15px }
+.tit input { width: 130px; color: #868686; height: 30px; padding: 0 5px; }
+.tit a { display: block; width: 80px; height: 32px; line-height: 32px; background: #00A0E9; color: #FFF; text-align: center; float: right }
+.bgRed { background: #F00 }
+.bgBlue { background: #00A0E9; }
+.room { display: none; }
+.roomInfo table tr td span { display: block; width: 100%; text-align: center }
+.roomPcu { min-height: 200px; margin-top: 10px; }
+.roomPcu ul li, .roomPcu ul span { line-height: 34px; color: #808080; font-size: 12px; }
+.roomPcu ul { margin-left: 25px; }
+.dataWarning:before { content: "！"; color: #F00; }
+.roomRevenueList, .socIncome { margin-bottom: 30px; }
+.socIncome { margin-top: 45px; }
+/*----login----*/
+.loginBg { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: #884DE7 url(../images/loginBg.jpg) center center no-repeat; z-index: -1; background-size: cover; }
+.login { width: 620px; margin: 0 auto }
+.login iframe { width: 660px; height: 400px; }
+.loginMain { width: 660px; height: 400px; overflow: hidden; position: absolute; top: 50%; margin-top: -200px; right: 10%; }
+.loginMain>i { display: block; position: absolute; width: 40px; height: 41px; top: 214px; right: 170px; background: url(http://picture.show.baofeng.com/web_show_images/activity/sina.png) no-repeat }
+.loginLogo { text-align: center; }
+.loginLogo img { margin-top: 50px; width: 200px; }
+.loginMain ul { width: 265px; margin: 0 auto; padding: 20px 0; }
+.loginMain ul li { margin-top: 10px; position: relative }
+.loginA { margin-top: 20px !important; }
+.loginMain > ul > li > i { position: absolute; right: 28px; top: 12px; font-size: 12px; color: #F00 }
+.loginMain ul li input { width: 100%; height: 40px; line-height: 40px; padding: 0 10px 0 46px; color: #000; border-radius: 20px; background: #FFF url(http://picture.show.baofeng.com/web_show_images/artistclient/images/user.png) no-repeat; }
+.loginMain ul span a { color: #9868ff; text-decoration: underline; font-size: 12px; float: right; margin-top: 10px }
+.loginMain ul li p { color: #F00; font-size: 12px; display: block; height: 30px; line-height: 30px; }
+.loginA a { width: 100%; background: #9c6eff; color: #FFF; display: block; line-height: 40px; text-align: center; border-radius: 20px; }
+.loginA a:hover { background: rgba(156, 110, 255,.9) }
+.loginUser-icon { background-position: 16px 4px !important; }
+.loginPaw-icon { background-position: 16px -27px !important; }
+/*--下拉---*/
+.incomeSelect { padding-top: 36px; }
+.incomeSelect input { display: block; width: 80px; height: 30px; color: #FFF; line-height: 30px; border: 1px solid #FFF; border-radius: 3px; background: #552A6F url(http://picture.show.baofeng.com/web_show_images/artistclient/images/DropDownArrow.png) no-repeat 61px center; cursor: pointer; /* text-align: center; */ text-indent: 10px; position: relative; left: 40px; top: -2px; }
+/*-headImg-*/
+#headImg { position: absolute; left: 50%; margin-left: -50px; top: 5px; width: 100px; height: 100px; border: 1px solid #CCC !important; opacity: 0; cursor: pointer; z-index: 100 }
+#headImg:focus { border: none !important }
+li.headImg h5, li.headImg span { min-height: 109px !important; line-height: 109px; }
+.headImgDiv { height: 100px; overflow: hidden; float: left }
+/*page*/
+.page { width: 100%; font-size: 12px; }
+.page a { color: #f24b88; text-decoration: underline; }
+.page li:last-child a { display: inline-block; width: 34px; height: 30px; line-height: 30px; text-align: center; background: #f24c89; color: #FFF; text-decoration: none }
+.page ul { float: right; margin: 20px 30px 0 0 }
+.page ul li { float: left; display: block; line-height: 30px; margin-left: 10px; width: auto !important }
+.page ul li input { margin: 0 5px; padding: 0 5px; border: 1px solid #E5E5E5; }
+a.pageGo, .page ul li input { width: 40px; height: 30px; border-radius: 3px; }
+a.pageGo { display: block; background: #f24b88; color: #FFF; text-decoration: none; text-align: center; line-height: 30px; }
+.pageColor { color: #CCC !important; cursor: default; }
+/*page*/
+
+/*----------------------------new---------------------------*/
+.newTit { position: relative; padding-left: 35px; line-height: 15px; margin-bottom: 17px; }
+.newTit i { display: block; width: 5px; height: 15px; background: #843376; position: absolute; top: 0; left: 20px; }
+.bigNewTit { background: #f7f7f7; height: 55px; line-height: 55px; margin-bottom: 0px; }
+.bigNewTit i { top: 20px; left: 40px; }
+.bigNewTit h4 { padding-left: 20px; float: left; }
+.socTop { padding: 35px 0 30px 40px; }
+.topHeadImg { width: 100px; height: 100px; overflow: hidden; float: left; }
+.topHeadImg img { width: 100px;  }
+.socTopInfo { float: left; width: 500px; padding: 16px 0 0 30px; }
+.socTopInfo ul li { float: left; width: 250px; line-height: 32px; color: #808080 }
+.socTopInfo ul li span { color: #000 }
+.socTable table tr td a:nth-child(2), .roomRevenueList table tr td a:nth-child(2) { margin: 0 5px; }
+.socTable table thead tr td:nth-child(1), .roomRevenueList table thead tr td:nth-child(1) { width: 35%; }
+.socTable table thead tr td:nth-child(2), .socTable table thead tr td:nth-child(3), .roomRevenueList table thead tr td:nth-child(2), .roomRevenueList table thead tr td:nth-child(3) { width: 25%; }
+/*roomManage*/
+.roomManage > ul { padding: 15px 0 20px 36px; border-bottom: 1px solid #EAEAEA; }
+.roomManage > ul li { height: 40px; line-height: 40px; color: #313131 }
+.roomManage > ul li input[type=text] { width: 66px; height: 30px; margin: 0 8px; border: 1px solid #e5e5e5; padding: 0 5px; }
+.roomManage > ul li label { margin-right: 10px; }
+.roomManage input[type=checkbox] { display: none; }
+.roomManage input[type=checkbox] + label { background: #fafafa; border: 1px solid #f14c89; width: 16px; height: 16px; border-radius: 3px; display: inline-block; position: relative; top: 4px; cursor: pointer }
+.roomManage input[type=checkbox]:checked + label { background: #f14c89; color: #FFF; }
+.roomManage input[type=checkbox]:checked + label:after { content: "√"; font-size: 14px; text-align: center; line-height: 16px; position: absolute; top: 0px; left: 3px; color: #FFF; }
+.roomManage > ul > li a { display: block; background: #f14c89; color: #FFF; width: 56px; height: 30px; line-height: 30px; padding: 0 10px; margin-top: 20px; text-decoration: none; border-radius: 3px; }
+.roomManage > ul > li a:hover { background: rgba(241, 76, 137,.7) }
+.roomManageTable table thead tr td:nth-child(1) { width: 10% }
+.roomManageTable table thead tr td:nth-child(2) { width: 15% }
+.roomManageTable table thead tr td:nth-child(3) { width: 35%; }
+.roomManageTable table thead tr td:nth-child(4) { width: 20%; }
+.roomManageTable table thead tr td:nth-child(5), .roomManageTable table thead tr td:nth-child(6) { width: 10% }
+/*blacklist*/
+.titInquiry { float: right }
+.titInquiry input { width: 160px; padding: 0 5px; height: 35px; border: 1px solid #EAEAEA }
+.titInquiry input:focus { border: 1px solid #f24b88 }
+.titInquiry a, a.aSearch { display: inline-block; width: 80px; height: 35px; line-height: 35px; text-align: center; color: #FFF; background: #f2508c; position: relative; top: 1px; border-radius: 3px; margin-right: 20px; }
+.titInquiry a:hover, a.aSearch:hover { background: rgba(241, 76, 137,.9) }
+.titBom { border-top: 1px solid #EAEAEA }
+.titBom > div { float: left; width: 100%; height: 55px; line-height: 55px; color: #808080 }
+.titBom > div + div { border-top: 1px dashed #EBEBEB; }
+.titBom > div input { width: 160px; height: 35px; border: 1px solid #EAEAEA; padding: 0 5px; }
+.titBom > div span { display: block; float: left; height: 55px; width: 138px; text-align: center; border-right: 1px dashed #EBEBEB; }
+.titBom > div em { margin-left: 30px; }
+.titBom > div em i { color: #f24b88; margin: 0 5px; }
+.titBom > div a { margin-left: 20px }
+.blacklist table thead tr td:nth-child(1) { width: 90px; }
+.blacklist table thead tr td:nth-child(2), .blacklist table thead tr td:nth-child(3) { width: 20%; }
+.blacklist table thead tr td:nth-child(6) { width: 150px; }
+/*incomeList*/
+.incomeList .newTit { padding-left: 45px }
+.incomeList .bigNewTit { height: 75px; line-height: 75px; }
+.incomeList .bigNewTit i { top: 30px; left: 50px; }
+.incomeListTable table tr td img { width: 21px; vertical-align: middle; position: relative; top: -2px; }
+.incomeListTable table thead tr td:nth-child(1) { width: 20%; }
+.incomeListTable table thead tr td:nth-child(4), .incomeListTable table thead tr td:nth-child(5) { width: 15% }
+.fjIcon, .xtIcon, .hmIcon { display: block; width: 16px; height: 16px; position: relative; top: 2px; margin: 0 auto }
+.fjIcon { background: url(http://picture.show.baofeng.com/web_show_images/artistclient/images/fjIcon.png) center no-repeat; }
+.xtIcon { background: url(http://picture.show.baofeng.com/web_show_images/artistclient/images/xtIcon.png) center no-repeat; }
+.hmIcon { background: url(http://picture.show.baofeng.com/web_show_images/artistclient/images/hmIcon.png) center no-repeat; }
+.roomPucButtion { margin-left: 20px; }
+.roomPucButtion a { display: block; float: left; width: 78px; height: 28px; line-height: 30px; text-align: center; border: 1px solid #f35691; color: #f35691; margin-right: 40px; border-radius: 15px; font-size: 12px }
+.roomPucButtion a.active { background: #f35691; color: #FFF; }
+.lccx { display: block; width: 50px; height: 30px; line-height: 30px; text-align: center; color: #FFF; background: #f484ae; z-index: 555; margin-left: 80px; position: absolute; right: 39px; top: 34px; border-radius: 3px; }

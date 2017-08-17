@@ -1,0 +1,103 @@
+<div id="tabContent">
+    <div class="artistEntry"><!--艺人入口-->
+        <ul class="tabAddStyle artistTab">
+            <li ms-click="openArtistScreen()" class="active"><a href="javascript:;">个人信息页</a></li>
+            <li ms-click="openIncomeScreen()"><a href="javascript:;">收入流水查询页</a></li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</div>
+<div ms-css-display="viwArt==0?'block':'none'">
+    <div class="ms-controller" ms-controller="artist">
+        <div class="artistInfo">
+            <div class="artistImg">
+                <div>
+                    <img ms-attr-src="_mainModel.user.picturesUrl">
+                </div>
+            </div>
+            <div class="artistInfoList">
+                <ul>
+                    <li><i></i>艺人名称：<span>{{_mainModel.user.nickName!=null?_mainModel.user.nickName:_mainModel.user.userName}}</span>
+                    </li>
+                    <li><i></i>订阅数：<span>{{channelList.subcribeSum}}</span></li>
+                    <li>所属工会：<span>{{channelList.sociatyName}}</span></li>
+                    <li>已播时长：<span>{{channelList.liveDate}}</span></li>
+                    <li>昨日直播时长：<span>{{channelList.yesLiveDate}}</span></li>
+                    <li>注册时间：<span>{{channelList.creDate|date("yyyy-MM-dd HH:mm:ss")}}</span></li>
+                </ul>
+                <ul>
+                    <li><i></i>是否开通小窝：<span ms-css-color="channelList.channelCode>0?'#F00':'#03cb03'">{{channelList.channelCode|channelNameFilters}}</span>
+                    </li>
+                    <!---->
+                    <div ms-css-display="channelList.channelName==''?'none':'block'">
+                        <li>小窝名称：<span>{{channelList.channelName}}</span></li>
+                        <li>小窝ID：<span>{{channelList.channelCode}}</span></li>
+                        <li>开通时间：<span>{{channelList.creDate|date("yyyy-MM-dd HH:mm:ss")}}</span></li>
+                        <li>是否被推荐：<span ms-css-color="channelList.recommend>0?'#03cb03':'#F00'">{{channelList.recommend|recommendFilters}}</span>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+</div>
+<!--//艺人信息页-->
+<!--收入流水查询-->
+<div ms-css-display="viwArt==1?'block':'none'">
+    <div class="incomeList" ms-controller="income">
+        <div class="newTit bigNewTit"><i></i><h4>收入流水查询</h4>
+
+            <div class="incomeQueryTop" style="float: right">
+                <div>
+                    <input id="start" style="cursor:pointer" class="laydate-icon" placeholder="请输入开始日期"
+                           ms-duplex="cycle.startDate"/>
+                    &nbsp;~&nbsp;
+                    <input id="end" style="cursor:pointer" class="laydate-icon" placeholder="请输入结束日期"
+                           ms-duplex="cycle.endDate"/></div>
+            </div>
+        </div>
+        <div class="roomIncome infoList">
+            <div class="incomeListTable">
+
+                <table>
+                    <thead>
+                    <td>昵称</td>
+                    <td>时间</td>
+                    <td>礼物类型</td>
+                    <td>数量</td>
+                    <td>营收</td>
+                    </thead>
+                    <tr ms-repeat="giveGiftListClone">
+                        <td>{{el.nick}}</td>
+                        <td>{{el.cre_time|date("yyyy-MM-dd HH:mm:ss")}}</td>
+                        <!--<td><img src="images/gift.png"/></td>-->
+                        <td>{{el.giftName}}</td>
+                        <td>{{el.gift_num}}</td>
+                        <td>{{el.money_dif}}</td>
+                    </tr>
+                </table>
+                <div class="page">
+                    <ul>
+                        <li>共{{countNum2}}条</li>
+                        <li>第{{pageNow2}}/{{pageTotal2}}页</li>
+                        <li ms-click="clickPage2(0)"><a href="javascript:;">首页</a></li>
+                        <li ms-click="clickPage2(1)"><a href="javascript:;" ms-class="pageColor:(pageNow2==1)">上一页</a>
+                        </li>
+                        <li ms-click="clickPage2(2)"><a href="javascript:;"
+                                                        ms-class="pageColor:(pageTotal2==pageNow2)">下一页</a>
+                        </li>
+                        <li ms-click="clickPage2(3)"><a href="javascript:;">尾页</a></li>
+                        <li>转到<input type="text" ms-duplex="skip2"/>页</li>
+                        <li ms-click="skipPage2()"><a href="javascript:;">GO</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//收入流水查询-->
+<script src="./js/artist.js"></script>
+<script src="http://picture.show.baofeng.com/web_show_images/artistclient/js/income.js"></script>

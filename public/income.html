@@ -1,0 +1,53 @@
+<!--收入流水查询-->
+<div class="incomeList" ms-controller="income">
+    <div class="newTit bigNewTit"><i></i><h4>收入流水查询</h4>
+
+        <div class="incomeQueryTop" style="float: right">
+            <div>
+                <input id="start" style="cursor:pointer" class="laydate-icon" placeholder="请输入开始日期"
+                       ms-duplex="cycle.startDate"/>
+                &nbsp;~&nbsp;
+                <input id="end" style="cursor:pointer" class="laydate-icon" placeholder="请输入结束日期"
+                       ms-duplex="cycle.endDate"/></div>
+        </div>
+    </div>
+    <div class="roomIncome infoList">
+        <div class="incomeListTable">
+
+            <table>
+                <thead>
+                <td>昵称</td>
+                <td>时间</td>
+                <td>礼物类型</td>
+                <td>数量</td>
+                <td>营收</td>
+                </thead>
+                <tr ms-repeat="giveGiftListClone">
+                    <td>{{el.nick}}</td>
+                    <td>{{el.cre_time|date("yyyy-MM-dd HH:mm:ss")}}</td>
+                    <!--<td><img src="images/gift.png"/></td>-->
+                    <td>{{el.giftName}}</td>
+                    <td>{{el.gift_num}}</td>
+                    <td>{{el.money_dif}}</td>
+                </tr>
+            </table>
+            <div class="page">
+                <ul>
+                    <li>共{{countNum2}}条</li>
+                    <li>第{{pageNow2}}/{{pageTotal2}}页</li>
+                    <li ms-click="clickPage2(0)"><a href="javascript:;">首页</a></li>
+                    <li ms-click="clickPage2(1)"><a href="javascript:;" ms-class="pageColor:(pageNow2==1)">上一页</a></li>
+                    <li ms-click="clickPage2(2)"><a href="javascript:;"
+                                                    ms-class="pageColor:(pageTotal2==pageNow2)">下一页</a>
+                    </li>
+                    <li ms-click="clickPage2(3)"><a href="javascript:;">尾页</a></li>
+                    <li>转到<input type="text" ms-duplex="skip2"/>页</li>
+                    <li ms-click="skipPage2()"><a href="javascript:;">GO</a></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//收入流水查询-->
+<script src="http://picture.show.baofeng.com/web_show_images/artistclient/js/income.js"></script>
